@@ -7,10 +7,12 @@ import { StoreModule } from '@ngrx/store';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { effects, reducers } from './store/app-state';
+import { LaunchContainerComponent } from './launch-container/launch-container.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LaunchContainerComponent
   ],
   imports: [
     BrowserModule,

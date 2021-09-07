@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IState } from 'src/app/store/app-state';
 import { Store } from "@ngrx/store";
-import * as LaunchesActions from "../../store/launches/launches.actions";
 import { selectLaunches } from "../../store/launches/launches.selectors";
 import { Observable } from 'rxjs';
 import { ILaunch } from "../../store/launches/launches.model";
@@ -20,8 +19,6 @@ export class LaunchListContainerComponent implements OnInit {
 
   ngOnInit(): void {
     this.launches$ = this.store.select(selectLaunches);
-
-    this.store.dispatch(new LaunchesActions.RequestLaunchesData());
   }
 
   getLaunchSuccessLabel(launch: ILaunch) {
