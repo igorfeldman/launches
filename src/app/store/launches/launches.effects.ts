@@ -5,7 +5,7 @@ import * as LaunchesActions from "./launches.actions";
 import {HttpClient} from "@angular/common/http";
 import { of } from "rxjs";
 import {ILaunch} from "./launches.model";
-import {map, catchError, switchMap, withLatestFrom} from "rxjs/operators"
+import {map, catchError, switchMap} from "rxjs/operators"
 
 @Injectable()
 export class LaunchesEffects {

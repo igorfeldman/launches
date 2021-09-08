@@ -18,6 +18,7 @@ export class ReceiveLaunchesDataSuccess implements Action {
     }) {}
 }
 
+// unused, potential error scenario
 export class ReceiveLaunchesDataFailure implements Action {
     readonly type = RECEIVE_LAUNCHES_DATA_FAILURE;
 
